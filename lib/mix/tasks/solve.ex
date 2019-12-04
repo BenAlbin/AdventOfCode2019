@@ -12,10 +12,10 @@ defmodule Mix.Tasks.Solve do
 
     {module, input} =
       if String.to_integer(day) < 10 do
-        {String.to_existing_atom("Elixir.AdventOfCode2018.Day0#{day}"),
+        {String.to_existing_atom("Elixir.AdventOfCode2019.Day0#{day}"),
          File.read!("./lib/resources/day_0#{day}.txt")}
       else
-        {String.to_existing_atom("Elixir.AdventOfCode2018.Day#{day}"),
+        {String.to_existing_atom("Elixir.AdventOfCode2019.Day#{day}"),
          File.read!("./lib/resources/day_#{day}.txt")}
       end
 
